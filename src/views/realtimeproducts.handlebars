@@ -1,0 +1,54 @@
+<h1>Products and handelebars</h1>
+
+<section class="section-form mt-4">
+
+
+
+<div class="d-flex justify-content-center mb-5">
+    <form id="product-form" class="bg-secondary p-4 text-light rounded" data-bs-theme="primary" style="width: 40%">
+        <h5 style="text-align: center;">AÑADIR PRODUCTO</h5>
+        <div class="mb-2">
+            <label for="title" class="form-label mb-0">Título</label>
+            <input type="text" class="form-control" id="product-title" name="title" required>
+        </div>
+        <div class="mb-2">
+            <label for="description" class="form-label mb-0">Descripción</label>
+            <input type="text" class="form-control" id="product-description" name="description" required>
+        </div>
+        <div class="mb-2">
+            <label for="code" class="form-label">Codigo</label>
+            <input type="text" class="form-control" id="product-code" name="code" required>
+        </div>
+        <div class="mb-2">
+            <label for="price" class="form-label">Precio</label>
+            <input type="number" class="form-control" id="product-price" name="price" required>
+        </div>
+        <div class="mb-2">
+            <label for="stock" class="form-label">Stock</label>
+            <input type="number" class="form-control" id="product-stock" name="stock" required>
+        </div>
+        <div class="mb-2">
+            <label for="category" class="form-label">Categoría</label>
+            <input type="text" class="form-control" id="product-category" name="category" required>
+        </div>
+        <div class="mb-2">
+            <label for="thumbnails" class="form-label">URL de imagen</label>
+            <input type="text" class="form-control" id="product-thumbnails" name="thumbnails">
+            <div class="form-text m-0">(Campo no obligatorio)</div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Añadir Producto</button>
+    </form>
+</div>
+
+</section>
+
+<section>
+    <div id="productsContainer" class="d-flex justify-content-evenly flex-wrap"></div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"></script>
+
+<script src="js/main.js"></script>
+
+
+
